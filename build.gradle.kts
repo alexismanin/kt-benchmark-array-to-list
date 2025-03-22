@@ -66,6 +66,15 @@ dependencies {
 
 benchmark {
     configurations {
+        register("flatten") {
+            include("\\.flatten.*")
+        }
+        register("flattenEmpty") {
+            include("\\.flatten.*")
+            param("arraySize", "0", "1", "1000")
+            param("innerSize", "0")
+        }
+
         register("takeWhileSmallSize") {
             include("\\.takeWhile.*")
             param("arraySize", "0", "1", "3", "32")
