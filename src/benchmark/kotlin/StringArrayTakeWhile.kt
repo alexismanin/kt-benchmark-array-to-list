@@ -25,4 +25,8 @@ open class StringArrayTakeWhile {
 
     @Benchmark
     open fun takeWhileNoLoop() = array.takeWhileNoLoop { it != "STOP" }
+
+
+    @Benchmark
+    open fun takeWhileSuggestion() = array.takeWhileSuggestion { it != "STOP" }
 }

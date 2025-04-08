@@ -1,5 +1,5 @@
-import fr.amanin.bench.toListUsingAsList
-import fr.amanin.bench.toListUsingListOf
+package fr.amanin.bench
+
 import kotlin.test.Test
 import kotlin.test.assertEquals
 

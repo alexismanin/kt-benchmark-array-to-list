@@ -3,8 +3,8 @@ package fr.amanin.bench
 import kotlin.random.Random
 import kotlinx.benchmark.*
 
-@Warmup(iterations = 2, time = 2)
-@Measurement(iterations = 2, time = 2)
+@Warmup(iterations = 5, time = 5)
+@Measurement(iterations = 5, time = 5)
 @State(Scope.Benchmark)
 open class StringArrayFlatten {
 
@@ -31,4 +31,7 @@ open class StringArrayFlatten {
 
     @Benchmark
     open fun flattenOptimized() = array.flattenOptimized()
+
+    @Benchmark
+    open fun flattenSuggestion() = array.flattenSuggestion()
 }

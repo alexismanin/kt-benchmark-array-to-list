@@ -49,3 +49,8 @@ fun <T> Array<T>.takeLastWhileNoLoop(predicate: (T) -> Boolean) : List<T> {
     }
 }
 
+fun <T> Array<T>.takeWhileSuggestion(predicate: (T) -> Boolean) : List<T> {
+    var i = 0
+    while (i < size && predicate(this[i])) i++
+    return if (i == 0) emptyList() else this.copyOfRange(0, i).asList()
+}

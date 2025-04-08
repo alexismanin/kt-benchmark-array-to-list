@@ -79,6 +79,12 @@ benchmark {
             param("innerSize", "0")
         }
 
+        register("flattenEmptyOrSingle") {
+            include("\\.flatten.*")
+            param("arraySize", "0", "1")
+            param("innerSize", "0", "3")
+        }
+
         register("takeWhileSmallSize") {
             include("\\.takeWhile.*")
             param("arraySize", "0", "1", "3", "32")

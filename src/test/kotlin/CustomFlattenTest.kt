@@ -1,3 +1,5 @@
+package fr.amanin.bench
+
 import fr.amanin.bench.flattenOptimized
 import kotlin.test.Test
 import kotlin.test.assertEquals

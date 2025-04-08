@@ -1,3 +1,5 @@
+package fr.amanin.bench
+
 import fr.amanin.bench.takeLastNoLoop
 import fr.amanin.bench.takeNoLoop
 import kotlin.test.Test
